@@ -34,7 +34,7 @@ jobs:
         env:
           PYTHONPATH: .
         run: |
-          pytest --cov=payments_api --cov-report=xml --cov-report=term-missing --junitxml=pytest-report.xml -q
+          pytest --cov=payments_api --cov-report=html --cov-report=term-missing --junitxml=pytest-report.xml -q
 
       - name: Upload test report
         if: always()
