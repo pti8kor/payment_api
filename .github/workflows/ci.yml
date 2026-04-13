@@ -43,9 +43,9 @@ jobs:
           name: pytest-report-py${{ matrix.python-version }}
           path: pytest-report.xml
 
-      - name: Upload coverage report
+      - name: Upload HTML coverage report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: coverage-report-py${{ matrix.python-version }}
-          path: coverage.xml
+          name: coverage-html-py${{ matrix.python-version }}
+          path: htmlcov
