@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment (never goes into image)
+.venv/
+venv/
+
+# Tests (not needed in production image)
+tests/
+
+# Coverage and test artifacts
+.coverage
+htmlcov/
+coverage.xml
+pytest-report.xml
+.pytest_cache/
+
+# IDE and git
+.vscode/
+.git/
+.github/
+
+# Dev dependencies
+requirements-dev.txt
+
+# Docker files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore
